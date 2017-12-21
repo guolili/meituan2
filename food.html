@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>href</title>
+    <style>
+        .food {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction:column;
+        }
+    </style>
+    <link rel="stylesheet" href="Static/css/style.css">
+    <link rel="stylesheet" href="Static/icon/iconfont.css">
+    
+</head>
+
+<body ng-app="app">
+    <ui-view class="food"></ui-view>
+    <script type="text/javascript" src="Frame/angular.min.js"></script>
+    <script type="text/javascript" src="Frame/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="App/app.js"></script>
+
+    <script type="text/javascript" src="App/Server/originServer.js"></script>
+    <script type="text/javascript" src="App/Server/homeServer.js"></script>
+    <script type="text/javascript" src="App/Server/tabServer.js"></script>
+
+    <script type="text/javascript" src="App/Controller/homeController.js"></script>
+    <script type="text/javascript" src="App/Controller/tabController.js"></script>
+    <script type="text/javascript" src="App/Directive/homeDirective.js"></script>
+    <script type="text/javascript" src="App/Directive/eleDirective.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+
+	 <div class="tab">
+        <ul> <!-- 自定义指令 -->
+        	<li ng-repeat="title in tit" ng-click="ckFn($index)" ng-ele>{{title}}</li>
+        </ul>
+    </div>
+    <div class="homeDir">
+		<div class="mrk">
+			<ul ng-repeat="info in tab">    
+				<li ng-repeat="indx in info.arr"><p>{{indx}}</p></li>
+			</ul>
+		</div>
+	    <dl ng-repeat="obj in result">
+	        <dt><img ng-src="{{obj.image}}"></dt>
+	        <dd>
+	            <h4>{{obj.name}}</h4>
+	            <p><span>￥ {{obj.evaluate}}/人</span><label>{{obj.address}}</label></p>
+	        </dd>
+	    </dl>
+	</div>
